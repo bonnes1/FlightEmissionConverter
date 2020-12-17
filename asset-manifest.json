@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/FlightEmissionConverter/static/css/main.eb89e087.chunk.css",
+    "main.js": "/FlightEmissionConverter/static/js/main.be9ab568.chunk.js",
+    "main.js.map": "/FlightEmissionConverter/static/js/main.be9ab568.chunk.js.map",
+    "runtime-main.js": "/FlightEmissionConverter/static/js/runtime-main.badd0a2c.js",
+    "runtime-main.js.map": "/FlightEmissionConverter/static/js/runtime-main.badd0a2c.js.map",
+    "static/css/2.b4ebbe46.chunk.css": "/FlightEmissionConverter/static/css/2.b4ebbe46.chunk.css",
+    "static/js/2.c4079b45.chunk.js": "/FlightEmissionConverter/static/js/2.c4079b45.chunk.js",
+    "static/js/2.c4079b45.chunk.js.map": "/FlightEmissionConverter/static/js/2.c4079b45.chunk.js.map",
+    "static/js/3.b57946ba.chunk.js": "/FlightEmissionConverter/static/js/3.b57946ba.chunk.js",
+    "static/js/3.b57946ba.chunk.js.map": "/FlightEmissionConverter/static/js/3.b57946ba.chunk.js.map",
+    "index.html": "/FlightEmissionConverter/index.html",
+    "static/css/2.b4ebbe46.chunk.css.map": "/FlightEmissionConverter/static/css/2.b4ebbe46.chunk.css.map",
+    "static/css/main.eb89e087.chunk.css.map": "/FlightEmissionConverter/static/css/main.eb89e087.chunk.css.map",
+    "static/js/2.c4079b45.chunk.js.LICENSE.txt": "/FlightEmissionConverter/static/js/2.c4079b45.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/FlightEmissionConverter/static/media/headerImageLowOpacity.da349c58.png",
+    "static/media/houseWithCabel.f8d312ca.png": "/FlightEmissionConverter/static/media/houseWithCabel.f8d312ca.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.badd0a2c.js",
+    "static/css/2.b4ebbe46.chunk.css",
+    "static/js/2.c4079b45.chunk.js",
+    "static/css/main.eb89e087.chunk.css",
+    "static/js/main.be9ab568.chunk.js"
+  ]
+}
