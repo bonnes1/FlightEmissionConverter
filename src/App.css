@@ -1,0 +1,344 @@
+.App {
+  text-align: center;
+
+
+}
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  background-image: url("./Resources/headerImageLowOpacity.png");
+    background-position: 20% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+
+
+
+.description {
+    width: 82%;
+    font-size: 18px;
+    color: black;
+    padding:2%;
+    margin-top: -2%;
+}
+.emissionsSentence {
+    margin-top:2%;
+    display: grid;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.returnTrip {
+  grid-area:returnTrip;
+  justify-self: right;
+    font-size: 18px;
+}
+.returnTrip input {
+    transform: scale(1.5);
+    margin-left: 1rem;
+}
+.arrival {
+  grid-area: arrival;
+  justify-self: left;
+    font-size: 18px;
+}
+
+.arrival input {
+    font-size: 18px;
+    width: 50%;
+    margin-left: 5%;
+}
+input::placeholder{
+    opacity: 30%;
+}
+#arrow {
+    grid-area: arrow;
+    justify-self: center;
+    transform: scale(1.5);
+}
+
+.departure {
+  grid-area:departure;
+  justify-self: right;
+    font-size: 18px;
+}
+.departure input {
+    font-size: 18px;
+    width: 50%;
+    margin-left: 5%;
+}
+
+
+.submit {
+    background:linear-gradient(to bottom, rgb(98, 160, 255) 5%, #327eed 100%);
+    background-color: rgba(50, 123, 236, 0.51);
+    border-radius:6px;
+    border:1px solid #0a3996;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #001691;
+    width: 8rem;
+    grid-area: submit;
+    justify-self: left;
+    box-shadow: 3px 7px 3px rgba(164, 164, 164, 0.36);
+
+}
+.submit:hover {
+    background:linear-gradient(to bottom, #5277ed 5%, #80aaed 100%);
+    background-color: #558fed;
+}
+.submit:active {
+    position:relative;
+    top:1px;
+}
+.items {
+  display: grid;
+    justify-items: center;
+    grid-gap: 1rem;
+  grid-template-columns: auto auto auto;
+    grid-template-rows: 300px;
+    margin: 3% 10% 4%;
+
+
+}
+.show {
+    display: grid;
+}
+.hidden {
+    display: none;
+}
+
+@media (max-width: 970px) {
+    .items {
+        display: grid;
+        justify-items: center;
+        grid-gap: 2rem;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns:  1fr;
+        margin: 3% 10%;
+    }
+    .show {
+        display: grid;
+    }
+    .hidden {
+        display: none;
+    }
+}
+
+#emissionText {
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.flip-box {
+    background-color: transparent;
+    width: 350px;
+    height: 250px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    width: 100%;
+    height: 100%;
+    transition:transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+.flip-box-inner.is-flipped {
+    transform:rotateY(180deg);
+}
+.box-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 5px 10px 5px rgba(164, 164, 164, 0.36);
+}
+.box-face--front {
+    background: #bee5bf;
+}
+.box-face--back {
+    line-height:normal;
+    background: #bee5bf;
+    transform:rotateY(180deg);
+}
+.box-face--back div {
+    padding: 5%;
+}
+.box-face-second--back div {
+    padding: 5%;
+}
+.box-face-third--back div {
+    padding: 5%;
+}
+
+.flip-box-inner-second {
+    width: 100%;
+    height: 100%;
+    transition:transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+.flip-box-inner-second.is-flipped {
+    transform:rotateY(180deg);
+}
+.box-face-second {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 5px 10px 5px rgba(164, 164, 164, 0.36);
+}
+.box-face-second--front {
+    background: #e0dcbf;
+}
+
+
+#householdImage {
+    transform: scale(0.15);
+    float: left;
+    width: 6%;
+    height: 0;
+    margin-top: -18%;
+}
+#kettleImage {
+    transform: scale(0.20);
+    float: left;
+    width: 6%;
+    height: 0;
+    margin-top: -10%
+}
+.box-face-second--back {
+    background: #e0dcbf;
+    transform:rotateY(180deg);
+}
+
+.flip-box-inner-third {
+    width: 100%;
+    height: 100%;
+    transition:transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+.flip-box-inner-third.is-flipped {
+    transform:rotateY(180deg);
+}
+.box-face-third {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 5px 10px 5px rgba(164, 164, 164, 0.36);
+}
+.box-face-third--front {
+    background: #bfd9dd;
+}
+.box-face-third--back {
+    background: #bfd9dd;
+    transform:rotateY(180deg);
+}
+.emissionBar {
+    border: 1px solid black;
+    position: relative;
+    margin-left: 50%;
+}
+
+
+.container {
+  margin-top: 5%;
+    margin-left:10%;
+  display:grid;
+    grid-template-columns: 20% 20% 5% 20% 20%;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    grid-gap: 10px;
+    max-height: 50px;
+    grid-template-areas: "returnTrip departure arrow arrival submit";
+    padding: 0 5% 0 5%;
+  /*grid-template-rows: auto;
+  grid-template-columns: 40% 20% 40%;
+  grid-gap: 10px;
+  grid-row-gap: 15px;
+  grid-template-areas:
+          'departure arrow arrival'
+          'returnTrip submit .';*/
+}
+
+.Footer {
+    display:block;
+    margin-top:1rem;
+    padding:1rem;
+    background-color: #5d5e5e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    font-size: 11px;
+    text-align: center;
+
+
+}
+.Footer a {
+    color:white;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+.box-face > div {
+    height: inherit;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
