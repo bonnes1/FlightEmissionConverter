@@ -189,7 +189,7 @@ class DestinationHandle extends Component {
                             you could boil 1 liter of water twice a day for
                         </div>
                         <div style={{fontSize:"30px",paddingRight:"20%",fontWeight:"bold",float:"right"}}>{boilingWater + " years"}</div>
-                        <div id={"kettleImage"}><img  src={kettle} alt={"Kettle icon"}/></div>
+                        <div id={"kettleImage"}><img src={kettle} alt={"Kettle icon"}/></div>
                     </div>
                 </div>
                 <div className="box-face-third box-face-third--back">

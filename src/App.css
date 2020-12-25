@@ -189,19 +189,42 @@ input::placeholder{
 }
 .box-face--front {
     background: #bee5bf;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .box-face--back {
     line-height:normal;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     background: #bee5bf;
     transform:rotateY(180deg);
 }
+.box-face .emissionBar {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.box-face-second img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.box-face-third img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
 .box-face--back div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     padding: 5%;
 }
 .box-face-second--back div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     padding: 5%;
 }
 .box-face-third--back div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     padding: 5%;
 }
 
@@ -226,6 +249,8 @@ input::placeholder{
     box-shadow: 5px 10px 5px rgba(164, 164, 164, 0.36);
 }
 .box-face-second--front {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     background: #e0dcbf;
 }
 
@@ -245,6 +270,8 @@ input::placeholder{
     margin-top: -10%
 }
 .box-face-second--back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     background: #e0dcbf;
     transform:rotateY(180deg);
 }
@@ -271,10 +298,14 @@ input::placeholder{
 }
 .box-face-third--front {
     background: #bfd9dd;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .box-face-third--back {
     background: #bfd9dd;
     transform:rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .emissionBar {
     border: 1px solid black;

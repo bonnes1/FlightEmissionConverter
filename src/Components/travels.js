@@ -29,6 +29,16 @@ export default travels = [
         departure:"Stockholm",
         arrival:"Wellington",
         distance:17448
+    },
+    {
+        departure:"Stockholm",
+        arrival:"Paris",
+        distance:1544
+    },
+    {
+        departure:"Stockholm",
+        arrival:"Cape Town",
+        distance:10366
     }
 
 
